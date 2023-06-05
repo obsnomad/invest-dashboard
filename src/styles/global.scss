@@ -1,0 +1,12 @@
+@use "sass:map";
+@import "vars";
+@import "reset";
+
+html,
+body,
+div[id="root"] {
+    font-family: var(--font-primary);
+    //color: var(--color-text);
+    //background-color: var(--color-background-1);
+    //line-height: 1.4;
+}

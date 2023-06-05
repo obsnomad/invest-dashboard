@@ -1,0 +1,27 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./data.db"
+}
+
+model Operation {
+  id            String      @id
+  name          String
+  date          DateTime
+  type          Int
+  figi          String
+  payment       Int
+  commission    Int
+  quantity      Int
+}
+
+model Intrument {
+  figi          String      @id
+  ticker        String
+  lot           Int
+  currency      String
+  name          String
+}

@@ -1,0 +1,73 @@
+{
+    "name": "invest-dashboard",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "git@github.com:obsnomad/invest-dashboard.git",
+    "author": "Aleksandr Katelnikov <akatelnikov@yandex.ru>",
+    "license": "MIT",
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "lint:css": "stylelint '**/*.{css,scss}'",
+        "lint:fix": "next lint --fix",
+        "lint-staged": "lint-staged --config lint-staged.config.js"
+    },
+    "dependencies": {
+        "@prisma/client": "^4.15.0",
+        "classnames": "2.3.2",
+        "dayjs": "1.11.8",
+        "lint-staged": "13.2.2",
+        "next": "13.4.4",
+        "ramda": "0.29.0",
+        "react": "18.2.0",
+        "react-datepicker": "4.12.0",
+        "react-dom": "18.2.0",
+        "react-table": "7.8.0",
+        "react-toastify": "9.1.3",
+        "sass": "1.62.1",
+        "tinkoff-invest-api": "5.0.0",
+        "webpack": "5.76.0"
+    },
+    "devDependencies": {
+        "@types/node": "20.2.5",
+        "@types/ramda": "0.29.2",
+        "@types/react": "18.2.8",
+        "@types/react-datepicker": "4.11.2",
+        "@types/react-dom": "18.2.4",
+        "@types/react-table": "7.7.14",
+        "@typescript-eslint/eslint-plugin": "5.59.8",
+        "@typescript-eslint/parser": "5.59.8",
+        "css-loader": "6.8.1",
+        "download": "8.0.0",
+        "eslint": "8.42.0",
+        "eslint-config-next": "13.4.4",
+        "eslint-plugin-unused-imports": "2.0.0",
+        "prettier": "2.8.8",
+        "prettier-plugin-sorted": "2.0.0",
+        "prisma": "^4.15.0",
+        "sass-loader": "13.3.1",
+        "style-loader": "3.3.3",
+        "stylelint-config-recommended": "12.0.0",
+        "stylelint-config-recommended-scss": "12.0.0",
+        "stylelint-scss": "5.0.0",
+        "stylint": "2.0.0",
+        "typescript": "5.1.3"
+    },
+    "importSort": {
+        ".js, jsx, .ts, .tsx": {
+            "options": {
+                "bottomAliases": [
+                    "*.module.scss"
+                ]
+            }
+        }
+    },
+    "browserslist": [
+        ">0.3%",
+        "not ie 11",
+        "not dead",
+        "not op_mini all"
+    ]
+}

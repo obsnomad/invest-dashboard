@@ -1,0 +1,26 @@
+{
+    "arrowParens": "always",
+    "trailingComma": "all",
+    "tabWidth": 4,
+    "semi": true,
+    "printWidth": 100,
+    "singleQuote": true,
+    "importOrder": [
+        "^react$",
+        "^[^./]",
+        "\\.stories$",
+        "^[./].*/[^A-Z][^/.]*(\\.(?!svg|css)[^/.]*)*$",
+        "^[./].*/[A-Z][^/.]*(\\.(?!svg|css)[^/.]*)*$",
+        "\\.svg$",
+        "\\.css$"
+    ],
+    "experimentalBabelParserPluginsList": ["jsx", "typescript"],
+    "overrides": [
+        {
+            "files": ["*.json", "*.md", "*.css", "*.scss", "*.yml", "*.yaml"],
+            "options": {
+                "singleQuote": false
+            }
+        }
+    ]
+}

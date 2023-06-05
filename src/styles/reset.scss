@@ -1,0 +1,74 @@
+html,
+body,
+div[id="root"],
+div[id="__next"] {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+    min-width: 320px;
+    border: 0;
+    scroll-behavior: smooth;
+    transform-origin: left top;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0%);
+}
+
+*,
+:after,
+:before {
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 0;
+}
+h2 {
+    margin: 0;
+}
+h3 {
+    margin: 0;
+}
+h4 {
+    margin: 0;
+}
+h5 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    box-shadow: none;
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
+}
