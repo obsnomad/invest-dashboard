@@ -12,12 +12,14 @@
         "lint": "next lint",
         "lint:css": "stylelint '**/*.{css,scss}'",
         "lint:fix": "next lint --fix",
-        "lint-staged": "lint-staged --config lint-staged.config.js"
+        "lint-staged": "lint-staged --config lint-staged.config.js",
+        "migrate:postgres": "dotenv -e .env.local -- npx prisma migrate deploy"
     },
     "dependencies": {
-        "@prisma/client": "^4.15.0",
+        "@prisma/client": "4.15.0",
         "classnames": "2.3.2",
         "dayjs": "1.11.8",
+        "dotenv-cli": "7.2.1",
         "lint-staged": "13.2.2",
         "next": "13.4.4",
         "ramda": "0.29.0",
@@ -46,7 +48,7 @@
         "eslint-plugin-unused-imports": "2.0.0",
         "prettier": "2.8.8",
         "prettier-plugin-sorted": "2.0.0",
-        "prisma": "^4.15.0",
+        "prisma": "4.15.0",
         "sass-loader": "13.3.1",
         "style-loader": "3.3.3",
         "stylelint-config-recommended": "12.0.0",
