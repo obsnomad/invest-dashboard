@@ -9,12 +9,6 @@ import {
 import { addMoneyValue } from '@/util/helpers';
 import api, { accountId } from '@/util/tinkoffApi';
 
-export type Data = Array<{
-    type: OperationType;
-    buy?: OperationItem;
-    sell?: OperationItem;
-}>;
-
 const operationStack = () => {
     const stack: Map<string, OperationItem> = new Map();
 

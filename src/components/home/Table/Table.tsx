@@ -15,7 +15,7 @@ type RowData = {
     sell?: OperationItem;
 };
 
-interface TableProps {
+export interface TableProps {
     rows: RowData[];
 }
 

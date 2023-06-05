@@ -1,11 +1,7 @@
 import { NextResponse } from 'next/server';
-import { Instrument, InstrumentIdType } from 'tinkoff-invest-api/cjs/generated/instruments';
+import { InstrumentIdType } from 'tinkoff-invest-api/cjs/generated/instruments';
 
 import api from '@/util/tinkoffApi';
-
-export type Params = { figi: string };
-
-export type Data = Instrument;
 
 export const revalidate = 60;
 
@@ -29,5 +25,5 @@ export async function GET(
 
     return new Response('Instrument not found', {
         status: 404,
-    })
+    });
 }
