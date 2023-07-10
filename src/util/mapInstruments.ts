@@ -13,7 +13,7 @@ export const mapInstruments = async <T extends { figi: string }>(items: T[]) => 
                     return acc;
                 }, new Set() as Set<string>),
             ].map((figi) =>
-                fetch<Instrument>(`${process.env.NEXT_PUBLIC_API_HOST}/api/instrument/${figi}/`),
+                fetch<Instrument>(`/api/instrument/${figi}/`),
             ),
         )
     ).reduce((acc, result) => {

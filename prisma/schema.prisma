@@ -10,20 +10,22 @@ datasource db {
 }
 
 model Operation {
-  id            String      @id
-  name          String
-  date          DateTime
-  type          Int
-  figi          String
-  payment       Int
-  commission    Int
-  quantity      Int
+  id         String      @id
+  name       String
+  date       DateTime
+  type       Int
+  figi       String
+  payment    Float
+  commission Float
+  quantity   Int
+  Instrument Instrument? @relation(fields: [figi], references: [figi])
 }
 
-model Intrument {
-  figi          String      @id
-  ticker        String
-  lot           Int
-  currency      String
-  name          String
+model Instrument {
+  figi       String      @id
+  ticker     String
+  lot        Int
+  currency   String
+  name       String
+  Operations Operation[]
 }
